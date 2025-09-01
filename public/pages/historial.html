@@ -1,0 +1,26 @@
+
+<!doctype html><html lang="es"><head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Historial | Permisos PC</title>
+  <link rel="stylesheet" href="../Css/style.css"/>
+</head><body>
+  <div class="container">
+    <div class="header">
+      <h1>Historial de Solicitudes</h1>
+      <div><button id="logout" class="ghost">Salir</button></div>
+    </div>
+    <div class="card">
+      <input id="q" placeholder="Buscar por usuario, sede o código de equipo…"/>
+      <table class="table">
+        <thead><tr><th>Usuario</th><th>Sede</th><th>Fechas</th><th>Equipo</th><th>Estado</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <p><b>Estadísticas (reduce):</b> <span id="stats">—</span></p>
+      <div style="margin-top:10px">
+        <a class="btn" href="./login.html">Login</a>
+        <a class="btn" href="./index.html">Nueva solicitud</a>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="../js/historial.js"></script>
+</body></html>

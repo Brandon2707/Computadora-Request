@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin",
+      "name": "Administrador"
+    },
+    {
+      "id": 2,
+      "username": "user1",
+      "password": "1111",
+      "role": "student",
+      "name": "Ana Student"
+    },
+    {
+      "id": 3,
+      "username": "user2",
+      "password": "2222",
+      "role": "student",
+      "name": "Bran Student"
+    }
+  ],
+  "requests": [
+    {
+      "id": 101,
+      "userId": 2,
+      "username": "user1",
+      "campus": "Central",
+      "outDate": "2025-08-30",
+      "backDate": "2025-09-02",
+      "deviceCode": "EQP-1234",
+      "accepted": true,
+      "signature": "Ana Student",
+      "createdAt": "2025-08-28T12:00:00.000Z",
+      "status": "pending"
+    }
+  ]
+}

@@ -1,25 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-
-    <h1>Pagina principal de prueba</h1>
-
-    <h2> proximamente pagina de matricula</h2>
-
-    <h3><a href="../pages/login.html">Ir al login</a></h3>
-
-   
-
-
-    <script type="module" src="../js/index.js"></script>
-
-</body>
-
-</html>
+<!doctype html><html lang="es"><head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Solicitud | Permisos PC</title>
+  <link rel="stylesheet" href="../Css/style.css"/>
+</head><body>
+  <div class="container">
+    <div class="header">
+      <h1>Solicitud de Permiso</h1>
+      <div>
+        <span id="who"></span>
+        <button id="logout" class="ghost">Salir</button>
+      </div>
+    </div>
+    <div class="card">
+      <form id="requestForm" class="grid">
+        <div>
+          <label>Sede</label>
+          <select id="campus" required>
+            <option value="">Seleccione…</option>
+            <option>Central</option>
+            <option>Occidente</option>
+            <option>Caribe</option>
+          </select>
+        </div>
+        <div>
+          <label>Fecha de salida</label>
+          <input id="outDate" type="date" required/>
+        </div>
+        <div>
+          <label>Fecha de regreso</label>
+          <input id="backDate" type="date" required/>
+        </div>
+        <div>
+          <label>Código de la computadora</label>
+          <input id="deviceCode" required placeholder="EQP-1234"/>
+        </div>
+        <div>
+          <label>Firma (opcional)</label>
+          <input id="signature" placeholder="Nombre completo"/>
+        </div>
+        <div>
+          <label><input id="accept" type="checkbox"/> Acepto las condiciones</label>
+          <details>
+            <summary>Ver condiciones</summary>
+            <ul>
+              <li>Resguardar el equipo en transporte público.</li>
+              <li>Ir acompañado si es posible.</li>
+              <li>En lluvia, usar vehículo apropiado.</li>
+              <li>No jugar/descargar usos no académicos.</li>
+              <li>Revisión del equipo antes y después.</li>
+              <li>Sin formulario y boleta firmada = amonestación.</li>
+            </ul>
+          </details>
+        </div>
+        <button class="primary">Enviar solicitud</button>
+      </form>
+      <p id="ok"></p>
+      <div style="margin-top:10px">
+        <a class="btn" href="./historial.html">Historial</a>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="../js/main.js"></script>
+</body></html>
